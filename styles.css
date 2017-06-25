@@ -2,30 +2,42 @@ h1 {
   text-align: center;
 }
 
+button {
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 7px;
+  border: none;
+}
+
+.all {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .buttons {
   text-align: center;
-}
-
-.antares {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.display {
-  margin: 0px 10px 0px 10px;
+  margin-top: 20px;
 }
 
 .index {
   float: right;
 }
 
-.shoutout {
+.name {
+  display: inline-block;
+}
+
+.shoutoutTable {
+  display: table;
   height: 200px;
-  width: 500px;
+  width: 100%;
   text-align: center;
-  padding-top: 10px;
-  padding: 10px;
-  /*margin-right: auto;
-  margin-left: auto;*/
-  margin: auto;
+}
+
+.shoutout {
+  display: table-cell;
+  vertical-align: middle;
+  margin-right: auto;
+  margin-left: auto;
 }

@@ -5,12 +5,32 @@ console.log(peopleArray);
    $('.name').append(peopleArray[0].name);
    $('.index').append('1/21');
    $('.shoutout').append(peopleArray[0].shoutout);
-   //on click of 'Next' call nextPerson()
-   $('#next').on('click', nextPerson);
-   //on click of 'Previous' call previousPerson()
-   $('#previous').on('click', previousPerson);
- }); // end onReady
- 
+   //function to start timer on page load, call nextPerson() every 3 seconds
+   var timer = 0;
+   setInterval(function() {
+    timer++;
+    if (timer === 3) {
+      timer = 0;
+      nextPerson();
+    }
+  }, 1000);
+    //end setInterval()
+
+   //on click of 'Next' call nextPerson(), reset timer
+   $('#next').on('click', function() {
+     timer = 0;
+     setInterval(timer);
+     nextPerson();
+   });
+
+   //on click of 'Previous' call previousPerson(), reset timer
+   $('#previous').on('click', function() {
+     timer = 0;
+     setInterval(timer);
+     previousPerson();
+   });
+}); // end onReady
+
 // globals
 var i = 0;
 var order = 1;
@@ -26,6 +46,7 @@ function nextPerson() {
   $('.name').text(peopleArray[i].name);
   $('.index').text(order + '/21');
   $('.shoutout').text(peopleArray[i].shoutout);
+  timer = 0;
 }// end nextPerson
 
 // on button click, display previous person object on DOM from peopleArray
@@ -35,16 +56,10 @@ function previousPerson() {
   if(i < 0) {
     i = peopleArray.length-1;
     order = peopleArray.length;
-    $('.name').text(peopleArray[i].name);
-    $('.index').text(order + '/21');
-    $('.shoutout').text(peopleArray[i].shoutout);
   }
-  else {
+  // else {
     $('.name').text(peopleArray[i].name);
     $('.index').text(order + '/21');
     $('.shoutout').text(peopleArray[i].shoutout);
-    }
-  console.log(i);
-  console.log(order);
-
+    // }
 }// end previousPerson
