@@ -1,0 +1,23 @@
+var peopleArray = [
+  {name: 'Kris', shoutout: 'Major props to all of Antares for diving head-first into the complex and wonderfully challenging world of software development!' },
+  {name: 'Brendin', shoutout: 'Shout Out to Tom, for making clarifications and re-wording ideas during the lectures.  Hearing things in multiple ways is a major help.' },
+  {name: 'Chris Black', shoutout: 'Shout out to David, Tom, Antonio and Alecia for playing Sushi Go at lunch!' },
+  {name: 'James Leary III', shoutout: 'Dillion helped me out with some functionality on the block assignment to remove the square counters and giving some clarity without directly giving me the answer.' },
+  {name: 'Emily Kuplic', shoutout: 'Shout out to everyone who helped me out with one of my many questions this week!' },
+  {name: 'Dillon', shoutout: 'Catherine picked me up and drove me to prime!' },
+  {name: 'Peter Prentiss', shoutout: 'Shout out to my groupmates for being awesome!' },
+  {name: 'Miles Nelson', shoutout: 'Shout out to everyone in Antares for being so willing to drop what you\'re doing to help out if someone has a question! It makes it a lot more comfortable to ask for help!' },
+  {name: 'Tom Brossart', shoutout: 'Shout out to Peter and Amanda for helping me through several questions on Color Blocks Part 2.' },
+  {name: 'Chase Whitney', shoutout: 'Tom for asking good questions.' },
+  {name: 'Amanda', shoutout: 'Much love to my pod-mates: Dave, Tom & Ben S.  Thanks for making my first week awesome and filled with learning.' },
+  {name: 'Theodore Cross', shoutout: 'Peter, he wants to exceed what is expected and challenge other people.' },
+  {name: 'Nicole', shoutout: 'Shout out to Dexter for helping me find an error in my code! Shout out to Anne for being super easy to approach and talk with! Shout out to Ted for asking awesome questions during our mentor meeting! Shout out to Miles for being willing to help others when they have questions! Shout out to Alecia for being willing to talk through code with me! Helped me find a different way of doing things!' },
+  {name: 'Alecia Hodges', shoutout: 'I\'d like to thank Nicole for being so kind and willing to help :)' },
+  {name: 'Dexter St-Pierre', shoutout: 'Shout out to Catherine for helping me figure out how to change my numbers when clicking away a block on the block assignment!' },
+  {name: 'Anne', shoutout: 'James, Peter, and Alecia, thank you guys so much for being so patient and explaining each step in the group activity on Tuesday until I understood!' },
+  {name: 'Ben Haesemeyer', shoutout: 'Shout out to Nicole for trading desk with me to accommodate my giant stature ' },
+  {name: 'Catherine Yanish', shoutout: 'Thanks Antares comrades for code help and fun times this first week!' },
+  {name: 'Alec Sands', shoutout: 'James, Peter, and Alecia, thank yo in the group activity on Tuesday until I understood!' },
+  {name: 'Antonio Rice', shoutout: 'Huge shoutout to Ted, you helped me out big time with the Block Challenge. Lets not forget about the honorable mentions though! You guys know who you are!!' },
+  {name: 'David Krueger', shoutout: 'Shout out to Amanda and Tom for having my back.' }
+];
