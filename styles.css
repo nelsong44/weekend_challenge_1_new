@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.antares {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.display {
+  margin: 0px 10px 0px 10px;
+}
+
+.index {
+  float: right;
+}
+
+.shoutout {
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  padding-top: 10px;
+  padding: 10px;
+  /*margin-right: auto;
+  margin-left: auto;*/
+  margin: auto;
+}
