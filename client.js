@@ -2,16 +2,16 @@ console.log(peopleArray);
  $(document).ready(function() {
    console.log('JQ linked');
    //on page load, display first person and their shoutout from peopleArray
-   $('.name').append(peopleArray[0].name);
-   $('.index').append('1/21');
-   $('.shoutout').append(peopleArray[0].shoutout);
+   $('.shoutout').append('<p>"' + peopleArray[0].shoutout + '"</p>' +
+   '<p>' + peopleArray[0].name + '</p>' +
+   '<p>1/21</p>');
    //fade in display on page load
    fadeDisplay();
    //function to start timer on page load, call nextPerson() every 10 seconds
    var timer = 0;
    setInterval(function() {
     timer++;
-    if (timer === 10) {
+    if (timer === 5) {
       timer = 0;
       nextPerson();
     }
@@ -59,15 +59,16 @@ function previousPerson() {
 }// end previousPerson
 
 function displayOnDom() {
-  $('.name').text(peopleArray[i].name);
-  $('.index').text(order + '/21');
-  $('.shoutout').text(peopleArray[i].shoutout);
+  $('.shoutout').empty();
+  $('.shoutout').append('<p>"' + peopleArray[i].shoutout + '"</p>' +
+    '<p>' + peopleArray[i].name + '</p>'+
+    '<p>' + order + '/21</p>');
   timer = 0;
   fadeDisplay();
 }//end displayOnDom
 
 //function to fade text on DOM in and out on button click
 function fadeDisplay(e, complete) {
-  // $('.display').css('display', 'none');
+  $('.display').css('display', 'none');
   $('.display').fadeToggle('slow');
 }//end fadeDisplay
