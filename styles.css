@@ -14,7 +14,7 @@ button {
   font-size: 30px;
   border-radius: 50%;
   margin: 7px;
-  border: 5px dotted #424949;
+  border: 5px solid #FFCAB1;
   background-color: #ED6A5A;
   color: #FFCAB1;
 }
@@ -33,7 +33,9 @@ button {
   margin-right: auto;
   border-radius: 50%;
   overflow: hidden;
-  /*box-shadow: 5px 5px 10px 5px #424949;*/
+  background-color: #77c1b7;
+  border: 5px dotted #424949;
+  /*border-spacing: 10px;*/
 }
 
 .display {
@@ -51,6 +53,6 @@ button {
 .shoutout {
   display: table-cell;
   vertical-align: middle;
-  background-color: #77c1b7;
+  /*background-color: #77c1b7;*/
   font-size: 15px;
 }
