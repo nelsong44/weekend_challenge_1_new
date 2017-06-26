@@ -1,5 +1,5 @@
 body {
-  background-color: #FDFAD2;
+  background-color: #D0D3D4;
 }
 
 h1 {
@@ -21,7 +21,7 @@ button {
 
 .buttons {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
   padding-bottom: 20px;
 }
 
@@ -54,5 +54,6 @@ button {
   display: table-cell;
   vertical-align: middle;
   /*background-color: #77c1b7;*/
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
 }
