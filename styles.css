@@ -1,7 +1,6 @@
 body {
-  /*background-color: #D0D3D4;*/
   background-image: url('images/stripe.svg');
-  opacity: 0.80;
+  opacity: 0.70;
 }
 
 h1 {
@@ -40,7 +39,6 @@ button {
 }
 
 .display {
-  font-family: Verdana, Geneva, sans-serif;
   text-align: center;
 }
 
@@ -56,4 +54,5 @@ button {
   vertical-align: middle;
   font-family: 'Lato', sans-serif;
   font-size: 15px;
+  font-weight: bolder;
 }
