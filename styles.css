@@ -1,5 +1,7 @@
 body {
-  background-color: #D0D3D4;
+  /*background-color: #D0D3D4;*/
+  background-image: url('images/stripe.svg');
+  opacity: 0.80;
 }
 
 h1 {
@@ -35,7 +37,6 @@ button {
   overflow: hidden;
   background-color: #77c1b7;
   border: 5px dotted #424949;
-  /*border-spacing: 10px;*/
 }
 
 .display {
@@ -53,7 +54,6 @@ button {
 .shoutout {
   display: table-cell;
   vertical-align: middle;
-  /*background-color: #77c1b7;*/
   font-family: 'Lato', sans-serif;
   font-size: 15px;
 }
