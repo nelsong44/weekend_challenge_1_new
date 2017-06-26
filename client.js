@@ -5,16 +5,17 @@ console.log(peopleArray);
    $('.name').append(peopleArray[0].name);
    $('.index').append('1/21');
    $('.shoutout').append(peopleArray[0].shoutout);
-   //function to start timer on page load, call nextPerson() every 3 seconds
+   //fade in display on page load
+   fadeDisplay();
+   //function to start timer on page load, call nextPerson() every 10 seconds
    var timer = 0;
    setInterval(function() {
     timer++;
-    if (timer === 3) {
+    if (timer === 10) {
       timer = 0;
       nextPerson();
     }
-  }, 1000);
-    //end setInterval()
+  }, 1000); //end setInterval
 
    //on click of 'Next' call nextPerson(), reset timer
    $('#next').on('click', function() {
@@ -43,10 +44,7 @@ function nextPerson() {
     i = 0;
     order = 1;
   }
-  $('.name').text(peopleArray[i].name);
-  $('.index').text(order + '/21');
-  $('.shoutout').text(peopleArray[i].shoutout);
-  timer = 0;
+  displayOnDom();
 }// end nextPerson
 
 // on button click, display previous person object on DOM from peopleArray
@@ -57,9 +55,19 @@ function previousPerson() {
     i = peopleArray.length-1;
     order = peopleArray.length;
   }
-  // else {
-    $('.name').text(peopleArray[i].name);
-    $('.index').text(order + '/21');
-    $('.shoutout').text(peopleArray[i].shoutout);
-    // }
+  displayOnDom();
 }// end previousPerson
+
+function displayOnDom() {
+  $('.name').text(peopleArray[i].name);
+  $('.index').text(order + '/21');
+  $('.shoutout').text(peopleArray[i].shoutout);
+  timer = 0;
+  fadeDisplay();
+}//end displayOnDom
+
+//function to fade text on DOM in and out on button click
+function fadeDisplay(e, complete) {
+  // $('.display').css('display', 'none');
+  $('.display').fadeToggle('slow');
+}//end fadeDisplay
