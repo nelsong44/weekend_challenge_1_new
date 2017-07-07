@@ -4,11 +4,16 @@ body {
 }
 
 h1 {
+  position: relative;
+  top: 31%;
   text-align: center;
   font-family: 'Diskopia';
-  font-size: 60px;
-  margin-bottom: 0px;
+  font-size: 20px;
   color: #424949;
+}
+
+.hideHeader {
+  display: none;
 }
 
 button {
@@ -23,36 +28,32 @@ button {
 .buttons {
   text-align: center;
   margin-top: 5px;
-  padding-bottom: 20px;
 }
 
 .circle {
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
   text-align: center;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
   overflow: hidden;
   background-color: #77c1b7;
-  border: 5px dotted #424949;
+  border: 5px dotted #117864;
 }
 
-.display {
-  text-align: center;
-}
-
-.shoutoutTable {
-  display: table;
-  height: 500px;
-  width: 500px;
-  text-align: center;
-}
-
-.shoutout {
-  display: table-cell;
-  vertical-align: middle;
+.shoutout, .shoutoutHeader {
+  position: relative;
+  top: 36%;
+  right: -8%;
+  width: 400px;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bolder;
+}
+.shoutoutHeader  {
+  font-family: 'Diskopia';
+  color: #424949;
+  font-size: 100px;
 }
